@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="loading-screen">
+            <img id="loading-image" src="https://i.postimg.cc/D0jrjPDk/2150844921.jpg" alt="Chess piece">
+            <p>Loading...</p>
+            <div class="loader"></div>
+        </div>
+        <div id="player-selection">
+            <h2>Choose your opponent</h2>
+            <button id="play-friend" class="button-3d">Play with a Friend</button>
+            <button id="play-bot" class="button-3d">Play with Bot</button>
+        </div>
+        <div id="game-board-container">
+            <div id="game-board"></div>
+            <div class="game-controls">
+                <button id="restart-button" class="control-button" title="Restart Game">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button id="close-button" class="control-button" title="Close Game">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div id="game-over">
+            <div class="game-over-content">
+                <h2 id="winner-message"></h2>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
