@@ -263,7 +263,7 @@ function getPieceValue(piece) {
 }
 
 function endGame(winner) {
-    winnerMessage.textContent = `checkmate!<br/>${winner.charAt(0).toUpperCase() + winner.slice(1)} wins!`;
+    winnerMessage.textContent = `checkmate! ${winner.charAt(0).toUpperCase() + winner.slice(1)} wins!`;
     gameOverScreen.style.display = 'flex';
 }
 
